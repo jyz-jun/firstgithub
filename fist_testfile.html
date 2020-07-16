@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="btn">你好</button>
+	<script>
+		var btn = document.getElementById("btn");
+		btn.addEventListener("click",hello1);
+		btn.addEventListener("click",hello2);
+		function hello1(){
+		 alert("hello 1");
+		}
+		function hello2(){
+		 alert("hello 2");
+		}
+	</script>
+	<script>
+		var arr = [1, 2, 3, 4, 4, 67, 89, 67];
+   		var s = [];
+   		for (var i = 0; i<arr.length; i++) {
+
+   			if(s.indexOf(arr[i])==-1){
+   				s.push(arr[i])
+   			}
+   		}
+   		document.write(s);
+   		console.log(s);
+	</script>
+</body>
+</html>
